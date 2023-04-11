@@ -1,0 +1,41 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#008000",
+    "activityBar.background": "#008000",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#9f9fff",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#e7e7e799",
+    "editorGroup.border": "#008000",
+    "panel.border": "#008000",
+    "sash.hoverBorder": "#008000",
+    "sideBar.border": "#008000",
+    "statusBar.background": "#004d00",
+    "statusBar.border": "#004d00",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#008000",
+    "statusBarItem.remoteBackground": "#004d00",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "tab.activeBorder": "#008000",
+    "titleBar.activeBackground": "#004d00",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.border": "#004d00",
+    "titleBar.inactiveBackground": "#004d0099",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#004d00",
+  "files.exclude": {
+    "**/.angular": true,
+    "**/node_modules": true,
+    "**/.editorconfig": true,
+    "**/.gitignore": true,
+    "**/angular.json": true,
+    "**/package-lock.json": true,
+    "**/README.md": true,
+    "**/tsconfig.app.json": true,
+    "**/tsconfig.json": true,
+    "**/tsconfig.spec.json": true,
+    "**/src/favicon.ico": true
+  }
+}
