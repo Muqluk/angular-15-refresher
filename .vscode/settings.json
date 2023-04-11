@@ -27,15 +27,16 @@
   "peacock.color": "#004d00",
   "files.exclude": {
     "**/.angular": true,
+    "**/.storybook": true,
     "**/node_modules": true,
+    "**/storybook-docgen": true,
     "**/.editorconfig": true,
+    "**/package-lock.json": true,
     "**/.gitignore": true,
     "**/angular.json": true,
-    "**/package-lock.json": true,
     "**/README.md": true,
     "**/tsconfig.app.json": true,
     "**/tsconfig.json": true,
-    "**/tsconfig.spec.json": true,
-    "**/src/favicon.ico": true
+    "**/tsconfig.spec.json": true
   }
 }

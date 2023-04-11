@@ -32,7 +32,7 @@
             "styles": [
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [ ]
           },
           "configurations": {
             "production": {
@@ -68,7 +68,8 @@
               "browserTarget": "angular-15-refresher:build:production"
             },
             "development": {
-              "browserTarget": "angular-15-refresher:build:development"
+              "browserTarget": "angular-15-refresher:build:development",
+              "port": 4000
             }
           },
           "defaultConfiguration": "development"
@@ -95,29 +96,30 @@
             "styles": [
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [ ]
           }
         },
         "storybook": {
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "angular-15-refresher:build",
+            "browserTarget": "angular-15-refresher:build:development",
+            "port": 4001,
             "compodoc": true,
             "compodocArgs": [
               "-e",
               "json",
               "-d",
-              "."
+              "storybook-docgen"
             ],
-            "port": 6006
+            "styles": [ ]
           }
         },
         "build-storybook": {
           "builder": "@storybook/angular:build-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "angular-15-refresher:build",
+            "browserTarget": "angular-15-refresher:build:production",
             "compodoc": true,
             "compodocArgs": [
               "-e",
@@ -130,5 +132,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

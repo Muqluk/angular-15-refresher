@@ -1,14 +1,14 @@
+import { CommonModule } from '@angular/common';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
-import { within, userEvent } from '@storybook/testing-library';
-import { CommonModule } from '@angular/common';
+import { userEvent, within } from '@storybook/testing-library';
 
 import Button from './button.component';
 import Header from './header.component';
 import Page from './page.component';
 
 const meta: Meta<Page> = {
-  title: 'Example/Page',
+  title: 'Examples/Stories/Page',
   component: Page,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/7.0/angular/configure/story-layout
