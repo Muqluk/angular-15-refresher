@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/angular-15-refresher",
-            "index": "src/index.html",
+            "index": "src/assets/index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -26,11 +26,11 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/assets/styles.sass"
             ],
             "scripts": [ ]
           },
@@ -90,11 +90,11 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "sass",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/assets/styles.sass"
             ],
             "scripts": [ ]
           }
