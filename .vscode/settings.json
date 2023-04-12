@@ -1,4 +1,5 @@
 {
+  "peacock.color": "lime",
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#33ff33",
     "activityBar.background": "#33ff33",
@@ -24,7 +25,7 @@
     "titleBar.inactiveBackground": "#00ff0099",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "lime",
+
   "files.exclude": {
     "**/.angular": true,
     "**/.storybook": true,
@@ -41,23 +42,5 @@
     "**/*.md": true,
     "src/index.ts": true,
     "src/app/assets": true
-  },
-
-
-
-
-
-  // explorer.fileNesting
-  //    Cannot settle on workspace or user settings for file nesting... yet (so why not both?)
-  //    For now, duplicating the settings in both...
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.expand": true,
-  "explorer.fileNesting.patterns": {
-    "*.component.ts": "${basename}.ts, ${basename}.scss, ${basename}.spec.ts, ${basename}.html, ${basename}.stories.ts, ${basename}.mdx",
-    "*.module.ts": "${capture}.module.ts, ${capture}-routing.module.ts",
-    "*.service.ts": "${basename}.ts, ${basename}.spec.ts",
-    "readme.md": "*.${extname}",
-    "index.ts": "${basename}.ts, ${basename}.html",
-    "*.scss": "_*.${extname}"
   }
 }
