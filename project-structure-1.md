@@ -58,13 +58,16 @@
          ∇ pipes
               shared-pipe.ts
          shared.module.ts
-    styles.scss
-    ▽ styles
-        app-loading.scss
-        company-colors.scss
-        spinners.scss
-        variables.scss
     ▽ assets
+        ▽ styles
+            main.scss
+            _forms.scss
+            _nav.scss
+            _typography.scss
+            _variables.scss
+            app-loading.scss
+            company-colors.scss
+            spinners.scss
         ▽ i18n
             lang-a.json
             lang-b.json

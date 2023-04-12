@@ -1,0 +1,218 @@
+@use 'variables';
+
+.dropdown-menu {
+  font-size: 1em;
+
+  .dropdown-item {
+    font-family: $font-secondary;
+    font-weight: 400;
+  }
+
+  .dropdown-item:hover {
+    background-color: $gray-300;
+    color: #000;
+  }
+
+  .dropdown-item.active {
+    background-color: $gray-300;
+    color: #000;
+  }
+
+  &.checkbox-menu {
+    .dropdown-item {
+      padding-right: 40px;
+    }
+
+    .dropdown-item.active:after {
+      content: '\2713';
+      font-family: Arial, Helvetica, sans-serif;
+      position: absolute;
+      right: 10px;
+      color: $success;
+    }
+  }
+}
+
+.site-title p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: $gray-700;
+  font-weight: 700;
+  border-left: 1px solid $gray-700;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+
+.client-nav {
+  .client-name {
+    background-color: $blue-gray;
+    -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    padding: 0.9em 2em 0.9em 1em;
+  }
+
+  .nav-item {
+    .nav-link {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+footer {
+  font-size: 0.8em;
+}
+
+.footer-link {
+  padding: 0 0.5rem;
+  display: inline-block;
+}
+
+.text-white {
+  .footer-link {
+    color: #fff;
+  }
+}
+
+.footer-link:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.nav-pills {
+  .nav-link {
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-radius: 2em;
+    padding: 0.25em 1em 0.35em 1em;
+  }
+
+  .nav-link.active {
+    background-color: $gray-200;
+    color: $primary;
+    font-weight: 700;
+  }
+
+  &.nav-underline {
+    .nav-link {
+      border-radius: 0;
+      padding: 0.15em 0;
+      margin: 0 2em 0 0;
+    }
+
+    &.justify-content-center {
+      .nav-link {
+        border-radius: 0;
+        padding: 0.15em 0;
+        margin: 0 1em;
+      }
+    }
+
+    .nav-link.active {
+      background-color: #fff;
+      border-bottom: 4px solid $secondary;
+    }
+  }
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: $primary;
+  font-weight: 700;
+}
+
+%remain-steps {
+  &:before {
+    content: counter(stepNum);
+    font-family: inherit;
+    font-weight: 700;
+  }
+
+  &:after {
+    background-color: $gray;
+  }
+}
+
+.multi-steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+
+  >li {
+    counter-increment: stepNum;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+    color: $dark;
+    z-index: 2;
+
+    &:before {
+      content: '\2713';
+      font-family: Arial, Helvetica, sans-serif;
+      display: block;
+      margin: 0 auto 4px;
+      background-color: $success;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      line-height: 32px;
+      text-align: center;
+      font-weight: bold;
+      border: 2px solid $success;
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: '';
+      height: 6px;
+      width: 100%;
+      background-color: $success;
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      z-index: -1;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    &.is-active {
+      @extend %remain-steps;
+
+      &:before {
+        background-color: #fff;
+        border-color: $success;
+        color: $success;
+      }
+
+      ~li {
+        @extend %remain-steps;
+
+        &:before {
+          background-color: $gray;
+          border-color: $gray;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .client-nav {
+    .client-name {
+      background-color: transparent;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      padding: 0.9em 1em 0.9em 1em;
+    }
+
+    .nav-item {
+      .nav-link {
+        padding-top: 5px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
