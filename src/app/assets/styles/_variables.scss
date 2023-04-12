@@ -1,0 +1,30 @@
+$primary: #002a4e;
+$secondary: #9e0442;
+$success: #3daf8d;
+$warning: #9e0442;
+$danger: #9e0442;
+$dark: #282727;
+$light: #f3f7fc;
+$gray: #b2bfca;
+$gold: #e4ce9b;
+$azure-white: #e1eef9;
+$blue-gray: #56697a;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1700px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1660px
+);

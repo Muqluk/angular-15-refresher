@@ -26,21 +26,21 @@
   },
   "peacock.color": "lime",
   "files.exclude": {
-    "**/.angular": false,
-    "**/.storybook": false,
-    "**/node_modules": false,
-    "**/storybook-docgen": false,
-    "**/.editorconfig": false,
-    "**/.gitignore": false,
-    "**/.vscode/extensions.json": false,
-    "**/.vscode/launch.json": false,
-    "**/.vscode/tasks.json": false,
-    "angular.json": false,
-    "package*": false,
-    "**/*tsconfig.*": false,
-    "**/shared": false,
-    "**/features": false,
-    "**/*.md": false
+    "**/.angular": true,
+    "**/.storybook": true,
+    "**/node_modules": true,
+    "**/storybook-docgen": true,
+    "**/.editorconfig": true,
+    "**/.gitignore": true,
+    "**/.vscode/extensions.json": true,
+    "**/.vscode/launch.json": true,
+    "**/.vscode/tasks.json": true,
+    "angular.json": true,
+    "package*": true,
+    "**/*tsconfig.*": true,
+    "**/*.md": true,
+    "src/index.ts": true,
+    "src/app/assets": true
   },
 
 
@@ -51,12 +51,13 @@
   //    Cannot settle on workspace or user settings for file nesting... yet (so why not both?)
   //    For now, duplicating the settings in both...
   "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.expand": true,
   "explorer.fileNesting.patterns": {
     "*.component.ts": "${basename}.ts, ${basename}.scss, ${basename}.spec.ts, ${basename}.html, ${basename}.stories.ts, ${basename}.mdx",
     "*.module.ts": "${capture}.module.ts, ${capture}-routing.module.ts",
     "*.service.ts": "${basename}.ts, ${basename}.spec.ts",
     "readme.md": "*.${extname}",
+    "index.ts": "${basename}.ts, ${basename}.html",
     "*.scss": "_*.${extname}"
   }
 }
