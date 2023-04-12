@@ -53,6 +53,7 @@
   "explorer.fileNesting.patterns": {
     "*.component.ts": "${basename}.ts, ${basename}.sass, ${basename}.spec.ts, ${basename}.html, ${basename}.stories.ts, ${basename}.mdx",
     "*.module.ts": "${capture}.module.ts, ${capture}-routing.module.ts",
-    "*.service.ts": "${basename}.ts, ${basename}.spec.ts"
+    "*.service.ts": "${basename}.ts, ${basename}.spec.ts",
+    "readme.md": "*.${extname}"
   }
 }
