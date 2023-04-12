@@ -1,0 +1,297 @@
+@import "variables";
+
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  border: 1px solid $gray-400;
+  line-height: 1.125em;
+
+  abbr[title],
+  abbr[data-bs-original-title] {
+    text-decoration: none;
+  }
+}
+
+.react-calendar--doubleView {
+  width: 700px;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer>* {
+  width: 50%;
+  margin: 0.5em;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 1em;
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+}
+
+.react-calendar__navigation button:disabled {
+  color: $gray-500;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: $gray-200;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: $gray-700;
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.react-calendar__tile:disabled {
+  color: $gray-500;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: $gray-200;
+}
+
+.react-calendar__tile--now {
+  font-weight: bold;
+}
+
+.react-calendar__tile--active {
+  background: $success;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: $success;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: $gray-200;
+}
+
+@import "variables";
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+  opacity: 1;
+  padding: 0;
+  margin-left: .5rem;
+  transform: scale(0.85) translateY(-1rem) translateX(0.15rem);
+
+  span {
+    padding: 0 .25rem;
+    background-color: #fff;
+  }
+}
+
+.form-floating>.form-control,
+.form-floating>.form-select {
+  height: calc(2.5rem + 4px);
+}
+
+.form-floating>label {
+  padding-top: .5rem;
+  color: $gray-600;
+}
+
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+  padding-top: .625rem;
+  padding-bottom: 0.625rem;
+}
+
+.form-floating>.form-select {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.form-label.required::after,
+.form-check-label.required::after {
+  content: '*';
+  color: $secondary;
+  padding-left: 2px;
+}
+
+.form-floating {
+  .form-label.required::after {
+    background-color: #fff;
+    padding-right: 2px;
+  }
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  color: $gray-600;
+}
+
+.minimal-select {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: $gray-600;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 5px;
+  margin-top: 0;
+  border-color: $gray-700;
+
+  &:checked {
+    background: $success;
+    border-color: $success;
+  }
+}
+
+.btn-radio-pill {
+  background-color: $gray-200;
+  font-size: .85em !important;
+  padding: .25em .75em !important;
+  border-radius: 20px !important;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-check {
+  position: fixed;
+}
+
+.btn-check:checked+.btn-radio-pill {
+  background-color: $success;
+  color: #fff;
+  box-shadow: none;
+}
+
+.react-datepicker__header {
+  background-color: $gray-200 !important;
+}
+
+.timeslot {
+  .react-datepicker__day {
+    border: 1px solid $success;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+}
+
+.react-datepicker__day--disabled {
+  border-color: #fff !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: $success !important;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: $success !important;
+}
+
+.react-datepicker__time-container {
+  width: 86px !important;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: $gray-700 !important;
+  top: 12px !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: $gray-100 !important;
+  color: #000 !important;
+}
+
+.react-datepicker__year-read-view--down-arrow {
+  border-color: $gray-700 !important;
+  top: 3px !important;
+}
+
+//International telephone input
+.react-tel-input .form-control {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: .25em !important;
+  border: 1px solid #ced4da !important;
+}
+
+@include media-breakpoint-down(md) {
+  .form-floating>label {
+    font-size: .85rem;
+    padding-top: .65rem;
+  }
+}

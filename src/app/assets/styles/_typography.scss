@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@import "variables";
+
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Heebo', sans-serif;
+
+html,
+body,
+p,
+a {
+  font-size: 1em;
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  font-weight: 700;
+  color: $primary;
+}
+
+.btn {
+  font-family: $font-secondary;
+  font-weight: 700;
+}
+
+.font-primary {
+  font-family: $font-primary !important;
+}
+
+.font-secondary {
+  font-family: $font-secondary !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+th {
+  color: $primary !important;
+}
+
+h1,
+.display-1 {
+  font-size: 3.25em;
+}
+
+h2,
+.display-2 {
+  font-size: 2em;
+}
+
+h3,
+.display-3 {
+  font-size: 1.8em;
+}
+
+h4,
+.display-4 {
+  font-size: 1.5em;
+}
+
+h5,
+.display-5 {
+  font-size: 1.2em;
+}
+
+h6,
+.display-6 {
+  font-size: 1.1em;
+}
+
+.text-larger {
+  font-size: 1.1rem;
+}
+
+.text-smaller {
+  font-size: .9rem;
+}
+
+.text-tiny {
+  font-size: .7rem;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-gold {
+  color: $gold;
+}
+
+.text-gray-600 {
+  color: $gray-600;
+}
+
+.list-spaced {
+  li {
+    margin-bottom: .5em;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+
+  h1,
+  .display-1 {
+    font-size: 3em;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+
+  h1,
+  .display-1 {
+    font-size: 2.5em;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+
+  h1,
+  .display-1 {
+    font-size: 2em;
+  }
+
+  .text-larger {
+    font-size: 1.05rem;
+  }
+}

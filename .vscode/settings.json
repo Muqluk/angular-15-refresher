@@ -1,42 +1,63 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#008000",
-    "activityBar.background": "#008000",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#9f9fff",
+    "activityBar.activeBackground": "#33ff33",
+    "activityBar.background": "#33ff33",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#8080ff",
     "activityBarBadge.foreground": "#15202b",
-    "commandCenter.border": "#e7e7e799",
-    "editorGroup.border": "#008000",
-    "panel.border": "#008000",
-    "sash.hoverBorder": "#008000",
-    "sideBar.border": "#008000",
-    "statusBar.background": "#004d00",
-    "statusBar.border": "#004d00",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#008000",
-    "statusBarItem.remoteBackground": "#004d00",
-    "statusBarItem.remoteForeground": "#e7e7e7",
-    "tab.activeBorder": "#008000",
-    "titleBar.activeBackground": "#004d00",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.border": "#004d00",
-    "titleBar.inactiveBackground": "#004d0099",
-    "titleBar.inactiveForeground": "#e7e7e799"
+    "commandCenter.border": "#15202b99",
+    "editorGroup.border": "#33ff33",
+    "panel.border": "#33ff33",
+    "sash.hoverBorder": "#33ff33",
+    "sideBar.border": "#33ff33",
+    "statusBar.background": "#00ff00",
+    "statusBar.border": "#00ff00",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#00cc00",
+    "statusBarItem.remoteBackground": "#00ff00",
+    "statusBarItem.remoteForeground": "#15202b",
+    "tab.activeBorder": "#33ff33",
+    "titleBar.activeBackground": "#00ff00",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.border": "#00ff00",
+    "titleBar.inactiveBackground": "#00ff0099",
+    "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#004d00",
+  "peacock.color": "lime",
   "files.exclude": {
     "**/.angular": true,
     "**/.storybook": true,
     "**/node_modules": true,
     "**/storybook-docgen": true,
     "**/.editorconfig": true,
-    "**/package-lock.json": true,
     "**/.gitignore": true,
-    "**/angular.json": true,
-    "**/README.md": true,
-    "**/tsconfig.app.json": true,
-    "**/tsconfig.json": true,
-    "**/tsconfig.spec.json": true
+    "**/.vscode/extensions.json": true,
+    "**/.vscode/launch.json": true,
+    "**/.vscode/tasks.json": true,
+    "angular.json": true,
+    "package*": true,
+    "**/*tsconfig.*": true,
+    "**/*.md": true,
+    "src/index.ts": true,
+    "src/app/assets": true
+  },
+
+
+
+
+
+  // explorer.fileNesting
+  //    Cannot settle on workspace or user settings for file nesting... yet (so why not both?)
+  //    For now, duplicating the settings in both...
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": true,
+  "explorer.fileNesting.patterns": {
+    "*.component.ts": "${basename}.ts, ${basename}.scss, ${basename}.spec.ts, ${basename}.html, ${basename}.stories.ts, ${basename}.mdx",
+    "*.module.ts": "${capture}.module.ts, ${capture}-routing.module.ts",
+    "*.service.ts": "${basename}.ts, ${basename}.spec.ts",
+    "readme.md": "*.${extname}",
+    "index.ts": "${basename}.ts, ${basename}.html",
+    "*.scss": "_*.${extname}"
   }
 }
